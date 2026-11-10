@@ -1,0 +1,894 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Sai Ganesh Vuppala: AI Architect, AWS Architect, Amazon Connect Architect and DevOps Engineer. Selected work, career, capabilities and résumé."><meta property="og:title" content="Sai Ganesh Vuppala"><meta property="og:description" content="AI, AWS and Amazon Connect architect. Selected work, career and résumé."><meta property="og:image" content="sai.jpg"><meta name="theme-color" content="#0a0a0c"><style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Sai Ganesh Vuppala</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: five pages behind a shutter. Each page is one pinned, scroll-scrubbed film:
+   doors part on Home, plates assemble on Work, a track slides on Career, a deck fans on Capabilities.
+   Single dark grade by design: charcoal ground, graphite surfaces, champagne and copper highlights. */
+:root{
+  --bg:#0a0a0c; --bg2:#111318; --graphite:#181b21; --gunmetal:#2a2e36;
+  --line:rgba(244,244,246,.11); --line2:rgba(244,244,246,.2);
+  --fg:#f4f4f6; --silver:#9b9ea8; --dim:#62656e;
+  --gold:#c9a96a; --copper:#b0693a; --teal:#12292b;
+  --serif:"Instrument Serif","Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0;padding:0}
+ul,ol{list-style:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:.95;letter-spacing:-.015em;text-wrap:balance}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:960px){.gut{padding-left:max(5vw,env(safe-area-inset-left,0px));padding-right:max(5vw,env(safe-area-inset-right,0px))}}
+.label{font:500 11px/1.5 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--silver)}
+.label b{color:var(--gold);font-weight:500}
+.gold{color:var(--gold)}
+em{font-style:italic}
+
+/* film grain + vignette */
+.grain{position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.vig{position:fixed;inset:0;z-index:39;pointer-events:none;background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.55))}
+
+/* ---------- top bar ---------- */
+.bar{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);
+  background:rgba(10,10,12,.74);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar .gut{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{font:400 22px/1 var(--serif);letter-spacing:-.01em;flex:none}
+.brand i{color:var(--gold);font-style:normal}
+.bar nav{margin-left:auto;min-width:0;overflow-x:auto;scrollbar-width:none}
+.bar nav::-webkit-scrollbar{display:none}
+.bar nav ul{display:flex;gap:clamp(12px,2.4vw,34px)}
+.bar nav a{display:block;padding:8px 0;white-space:nowrap;font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--silver);
+  background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;transition:color .3s,background-size .5s cubic-bezier(.7,0,.2,1)}
+.bar nav a:hover{color:var(--fg)}
+.bar nav a[aria-current="page"]{color:var(--fg);background-size:100% 1px}
+.prog{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:1px;z-index:55;background:var(--gold);transform:scaleX(0);transform-origin:0 50%}
+
+/* ---------- shutter (page transition) ---------- */
+.shutter{position:fixed;inset:0;z-index:70;pointer-events:none}
+.shutter i{position:absolute;left:0;right:0;height:50.5%;background:var(--bg2);transform:scaleY(0)}
+.shutter i:first-child{top:0;transform-origin:50% 0;border-bottom:1px solid var(--gold)}
+.shutter i:nth-child(2){bottom:0;transform-origin:50% 100%}
+.shutter b{position:absolute;inset:0;display:grid;place-items:center;opacity:0;font:400 clamp(44px,9vw,130px)/1 var(--serif);font-style:italic;color:var(--fg)}
+
+/* ---------- shared ---------- */
+.page{position:relative}
+.frame{background:linear-gradient(160deg,#1c2027,#13161b);border:1px solid var(--line);border-radius:14px;
+  box-shadow:inset 1px 1px 0 rgba(255,236,200,.09),0 40px 80px -30px rgba(0,0,0,.8),0 0 0 1px rgba(0,0,0,.4)}
+.tb{display:flex;align-items:center;gap:6px;padding:11px 14px;border-bottom:1px solid var(--line);font:400 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--silver);text-transform:uppercase}
+.tb::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--copper);box-shadow:12px 0 0 var(--gunmetal),24px 0 0 var(--gunmetal);margin-right:28px}
+.tb span{margin-left:auto;color:var(--dim)}
+.next{display:block;border-top:1px solid var(--line);padding-block:clamp(48px,9vh,110px)}
+.next .label{display:block;margin-bottom:12px}
+.next strong{display:flex;align-items:baseline;gap:.3em;font:400 clamp(44px,9vw,140px)/.95 var(--serif);letter-spacing:-.02em;transition:color .4s,letter-spacing .6s cubic-bezier(.7,0,.2,1)}
+.next:hover strong{color:var(--gold);letter-spacing:0}
+.next strong span{font-style:italic;color:var(--gold)}
+
+/* ---------- HOME ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;background:var(--bg);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20%;background:
+  radial-gradient(38% 46% at 74% 30%,rgba(201,169,106,.16),transparent 70%),
+  radial-gradient(44% 50% at 18% 78%,rgba(18,60,64,.55),transparent 70%);
+  animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(3%,-2%,0) scale(1.08)}}
+.hero::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,var(--line) 1px,transparent 1px) 50% 0/25% 100%;opacity:.5;
+  mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent)}
+.hero-in{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center;gap:clamp(14px,2.4vh,26px);padding-block:110px 90px}
+.hero h1{font-size:clamp(64px,15.5vw,270px);line-height:.82;letter-spacing:-.035em}
+.hero h1 span{display:block;will-change:transform}
+.hero h1 .l2{font-style:italic;color:var(--gold);padding-left:.55em}
+.hero .role{font:500 clamp(11px,1.05vw,14px)/1.6 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--fg)}
+.hero .tag{font:400 clamp(20px,2.2vw,34px)/1.25 var(--serif);color:var(--silver);max-width:26ch}
+.corner{position:absolute;z-index:1;bottom:28px}
+.corner.r{right:max(16px,5vw);text-align:right}.corner.l{left:max(16px,5vw)}
+.cue::after{content:"";display:block;width:1px;height:46px;margin:10px 0 0 auto;background:linear-gradient(var(--gold),transparent);animation:cue 2.4s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.par{transform:translate3d(calc(var(--px,0) * var(--k,10px)),calc(var(--py,0) * var(--k,10px)),0);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+
+.about{position:relative;background:var(--bg2);padding-block:clamp(70px,12vh,130px)}
+.about-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,90px);align-items:center}
+@media (max-width:959px){.about-in{grid-template-columns:minmax(0,1fr)}}
+.about-copy{display:flex;flex-direction:column;gap:clamp(14px,2.2vh,26px);min-width:0}
+.about h2{font-size:clamp(36px,4.8vw,84px)}
+.mask{display:block;overflow:hidden;padding-bottom:.08em}
+.mask>span{display:block}
+.about .bio{color:var(--silver);font-size:clamp(15px,1.15vw,18px);max-width:54ch}
+.facts{display:flex;flex-direction:column}
+.facts div{position:relative;display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:10px}
+.facts div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line2);transform:scaleX(var(--w,1));transform-origin:0 50%}
+.facts dt{font:500 10.5px/1.7 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.facts dd{font-size:14.5px;line-height:1.5;color:var(--fg)}
+.portrait{position:relative;border-radius:6px;overflow:hidden;max-height:74vh;aspect-ratio:4/5;justify-self:end;width:100%;max-width:460px;
+  box-shadow:inset 0 0 0 1px rgba(255,236,200,.18),0 50px 100px -40px #000}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 14%;filter:grayscale(.55) contrast(1.12) brightness(.82)}
+.portrait::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(200deg,rgba(201,169,106,.28),transparent 45%,rgba(14,52,56,.6));mix-blend-mode:soft-light}
+.portrait::after{content:"";position:absolute;inset:0;z-index:1;border-radius:6px;box-shadow:inset 1px 1px 0 rgba(255,236,200,.35),inset 0 -80px 80px -40px rgba(0,0,0,.7)}
+.portrait figcaption{position:absolute;z-index:2;left:16px;bottom:14px}
+
+.chapters a{position:relative;display:grid;grid-template-columns:70px minmax(0,1fr) auto;align-items:baseline;gap:16px;padding-block:clamp(18px,3.4vh,34px)}
+.chapters a::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line2)}
+.chapters strong{font:400 clamp(34px,6vw,92px)/1 var(--serif);letter-spacing:-.02em;transition:transform .6s cubic-bezier(.7,0,.2,1),color .3s}
+.chapters a:hover strong{transform:translateX(18px);color:var(--gold)}
+.chapters{padding-block:clamp(60px,10vh,120px)}
+.chapters .label.r{text-align:right}
+@media (max-width:640px){.chapters a{grid-template-columns:36px minmax(0,1fr)}.chapters .label.r{display:none}}
+
+/* ---------- WORK ---------- */
+.work{position:relative;padding-block:110px 40px;display:flex;flex-direction:column;gap:clamp(56px,9vh,100px)}
+.work-title h2{font-size:clamp(60px,13vw,230px);line-height:.84}
+.work-title h2 span{display:block}
+.work-title h2 span+span{font-style:italic;color:var(--gold);padding-left:.6em}
+.proj{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(24px,5vw,80px);align-items:center}
+@media (max-width:959px){.proj{grid-template-columns:minmax(0,1fr)}}
+.p-text{position:relative;z-index:0;display:flex;flex-direction:column;gap:clamp(10px,1.7vh,18px);min-width:0}
+.p-num{position:absolute;right:0;top:-.55em;z-index:-1;font:400 clamp(120px,17vw,260px)/1 var(--serif);font-style:italic;color:transparent;-webkit-text-stroke:1px rgba(244,244,246,.09);pointer-events:none}
+.proj h3{font-size:clamp(34px,4.4vw,72px)}
+.proj .desc{color:var(--silver);font-size:clamp(14.5px,1.12vw,17px);max-width:46ch}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags li{font:400 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:7px 9px;border:1px solid var(--line2);border-radius:3px;color:var(--silver)}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border-top:1px solid var(--line);padding-top:12px}
+.meta dt{font:500 9.5px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.meta dd{font-size:13px;line-height:1.4}
+.go{align-self:flex-start;font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-bottom:6px;border-bottom:1px solid var(--copper)}
+.go:hover{color:var(--fg)}
+.p-viz{position:relative;aspect-ratio:5/4;max-height:66vh;min-width:0;width:100%;justify-self:center}
+.ly{position:absolute;will-change:transform}
+.ly.back{inset:0 14% 16% 0;border-radius:14px;border:1px solid var(--line);overflow:hidden;
+  background:radial-gradient(120% 90% at 0 0,rgba(201,169,106,.13),transparent 55%),radial-gradient(90% 90% at 100% 100%,rgba(18,60,64,.6),transparent 60%),#0e1014}
+.ly.back span{position:absolute;left:5%;top:3%;font:400 clamp(60px,9vw,150px)/1 var(--serif);font-style:italic;color:rgba(244,244,246,.07);white-space:nowrap}
+.ly.back::after{content:"";position:absolute;inset:0;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/100% 12.5%,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/10% 100%;opacity:.45}
+.ly.main{inset:15% 0 0 11%;overflow:hidden;display:flex;flex-direction:column}
+.ly.chip{left:0;bottom:9%;z-index:2;padding:11px 14px;border-radius:8px;background:rgba(10,10,12,.82);border:1px solid rgba(201,169,106,.45);
+  font:500 10.5px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);box-shadow:0 20px 40px -14px #000;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.mock{flex:1;min-height:0;padding:clamp(12px,1.6vw,22px);display:flex;flex-direction:column;gap:10px;font:400 clamp(10.5px,.9vw,13px)/1.6 var(--mono);color:var(--silver);overflow:hidden}
+.mock .q,.mock .a{max-width:78%;padding:10px 13px;border-radius:10px;font-family:var(--sans);font-size:clamp(12px,1vw,14.5px);line-height:1.45}
+.mock .q{align-self:flex-end;background:var(--gunmetal);color:var(--fg)}
+.mock .a{background:#101317;border:1px solid var(--line);color:var(--fg)}
+.mock .a small{display:block;margin-top:8px;font:500 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.mock pre{margin:0;font:inherit;line-height:1.95;white-space:pre-wrap}
+.mock .ok{color:#7fb8a4}.mock .hl{color:var(--fg)}.mock .g{color:var(--gold)}
+.envs{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.envs li{padding:6px 10px;border:1px solid var(--line2);border-radius:99px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.envs li:last-child{border-color:var(--gold);color:var(--gold)}
+.mock svg{display:block;width:100%;flex:1;min-height:0}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.quotes div{border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+.quotes b{display:block;color:var(--fg);font-weight:500}
+.agenda{flex:1;display:grid;grid-template-columns:44px repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:6px;min-height:0}
+.agenda i{font-style:normal;color:var(--dim);font-size:10px;align-self:center}
+.agenda b{border:1px solid var(--line);border-radius:6px;padding:6px 8px;font:500 clamp(10px,.82vw,12px)/1.3 var(--sans);color:var(--silver);overflow:hidden}
+.agenda b.on{border-color:rgba(201,169,106,.6);color:var(--fg);background:rgba(201,169,106,.09)}
+.wave{flex:1;display:flex;align-items:center;gap:3px;min-height:60px}
+.wave i{flex:1;background:linear-gradient(var(--gold),var(--copper));border-radius:2px;opacity:.85}
+.heard{font:400 clamp(16px,1.7vw,26px)/1.3 var(--serif);font-style:italic;color:var(--fg)}
+.steps{flex:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;min-height:0}
+.steps li{border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:4px}
+.steps b{font:500 10px/1 var(--mono);letter-spacing:.12em;color:var(--gold)}
+.steps span{font:500 clamp(12px,1vw,15px)/1.3 var(--sans);color:var(--fg)}
+.shot{flex:1;min-height:0;position:relative}
+.shot img{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(.85) brightness(.9)}
+.shot::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,transparent 40%,rgba(14,40,44,.55));mix-blend-mode:multiply}
+.rail{display:none}
+
+.index{padding-block:clamp(60px,10vh,120px)}
+.index h2{font-size:clamp(34px,5vw,80px);margin:14px 0 clamp(24px,4vh,44px)}
+.index li{position:relative}
+.index li::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line2)}
+.row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.9fr) 170px 80px;gap:18px;align-items:baseline;padding-block:18px}
+.row strong{font:400 clamp(22px,2.2vw,34px)/1.1 var(--serif)}
+.row p{color:var(--silver);font-size:14.5px}
+.row .vis{text-align:right}
+.row .vis.pv{color:var(--gold)}
+a.row:hover strong{color:var(--gold)}
+@media (max-width:820px){.row{grid-template-columns:minmax(0,1fr) auto;gap:4px 14px}.row p{grid-column:1/-1;order:3}.row .lang{display:none}}
+
+/* ---------- CAREER ---------- */
+.career{padding-block:110px 40px}
+.career-head h2{font-size:clamp(50px,8.4vw,150px)}
+.career-head h2 em{color:var(--gold)}
+.track{display:flex;flex-direction:column;gap:18px}
+.career-head{margin-bottom:clamp(10px,3vh,36px)}
+.plate{position:relative;padding:clamp(22px,2.6vw,40px);display:flex;flex-direction:column;gap:14px;min-width:0}
+.plate .yr{font:400 clamp(44px,5.4vw,92px)/1 var(--serif);font-style:italic;color:var(--gold)}
+.plate h3{font-size:clamp(26px,2.6vw,42px);line-height:1.02}
+.plate .org{font:500 11px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
+.plate ul{display:flex;flex-direction:column;gap:8px;color:var(--silver);font-size:14.5px;line-height:1.5}
+.plate ul li{padding-left:16px;position:relative}
+.plate ul li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--gold)}
+
+/* ---------- CAPABILITIES ---------- */
+.caps{padding-block:110px 40px;display:flex;flex-direction:column;gap:clamp(18px,3.4vh,40px)}
+.caps h2{font-size:clamp(44px,7vw,116px)}
+.caps h2 em{color:var(--gold)}
+.deck{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:959px){.deck{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.deck{grid-template-columns:minmax(0,1fr)}}
+.card{padding:clamp(16px,1.6vw,26px);display:flex;flex-direction:column;gap:10px;min-width:0}
+.card .label{color:var(--gold)}
+.card h3{font-size:clamp(24px,2.2vw,36px);line-height:1}
+.card hr{border:0;height:1px;width:100%;background:linear-gradient(90deg,var(--gold),transparent);margin:0;transform-origin:0 50%}
+.card li{font-size:clamp(12.5px,1vw,14px);line-height:1.45;color:var(--silver);padding-block:4px;border-bottom:1px solid var(--line)}
+.card li:last-child{border-bottom:0}
+.certs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.certs{grid-template-columns:minmax(0,1fr)}}
+.certs li{display:flex;align-items:baseline;gap:14px;padding:14px 0 0;border-top:1px solid var(--gold)}
+.certs b{font:400 clamp(28px,2.8vw,46px)/1 var(--serif);font-style:italic;color:var(--gold)}
+.certs span{font-size:13.5px;line-height:1.4;color:var(--silver)}
+
+/* ---------- STATS ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding-block:clamp(60px,10vh,120px) 0;margin:0}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stats dt{font:400 clamp(60px,8vw,128px)/.9 var(--serif);font-style:italic;color:var(--gold);font-variant-numeric:tabular-nums}
+.stats dd{margin-top:10px;padding-top:10px;border-top:1px solid var(--line2);font-size:14.5px;line-height:1.5;color:var(--silver);max-width:26ch}
+
+/* ---------- RÉSUMÉ ---------- */
+.resume{padding-block:120px 70px;display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:clamp(28px,5vw,90px);align-items:start}
+@media (max-width:959px){.resume{grid-template-columns:minmax(0,1fr)}}
+.r-side{display:flex;flex-direction:column;gap:18px;align-items:flex-start;min-width:0}
+@media (min-width:960px){.r-side{position:sticky;top:104px}}
+.r-side h2{font-size:clamp(60px,8.5vw,150px);color:var(--gold)}
+.r-lead{font:400 clamp(18px,1.7vw,26px)/1.3 var(--serif);color:var(--fg);max-width:22ch}
+.r-contact{display:flex;flex-direction:column;gap:6px;text-transform:none;letter-spacing:.04em}
+.r-contact a{color:var(--gold)}
+.sheet{padding:clamp(20px,3.4vw,56px);min-width:0}
+.r-sec{padding-block:clamp(20px,3vh,34px);border-top:1px solid var(--line)}
+.r-sec:first-child{border-top:0;padding-top:0}
+.r-sec>h3{font:500 11px/1.5 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.r-sec p,.r-sec li,.r-sec dd{font-size:14.5px;line-height:1.6;color:var(--silver)}
+.r-sec>p{color:var(--fg);font-size:clamp(15px,1.2vw,17px);max-width:70ch}
+.r-skills div{display:grid;grid-template-columns:190px minmax(0,1fr);gap:16px;padding-block:8px;border-top:1px solid var(--line)}
+.r-skills div:first-child{border-top:0}
+.r-skills dt{font:500 13px/1.6 var(--sans);color:var(--fg)}
+@media (max-width:700px){.r-skills div{grid-template-columns:minmax(0,1fr);gap:2px}}
+.r-job{padding-block:16px;border-top:1px solid var(--line)}
+.r-job:first-of-type{border-top:0;padding-top:0}
+.r-job header{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:10px}
+.r-job header strong{font:400 clamp(20px,1.9vw,28px)/1.1 var(--serif);color:var(--fg)}
+.r-job header span{font:500 11px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.r-job header em{margin-left:auto;font:400 12px/1.5 var(--mono);font-style:normal;color:var(--dim)}
+.r-job ul,.r-plain{display:flex;flex-direction:column;gap:7px}
+.r-job li,.r-plain li{position:relative;padding-left:16px}
+.r-job li::before,.r-plain li::before{content:"";position:absolute;left:0;top:.8em;width:8px;height:1px;background:var(--gold)}
+.r-plain strong{color:var(--fg);font-weight:500}
+
+/* ---------- CONTACT ---------- */
+.contact{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;gap:clamp(20px,3.6vh,44px);padding-block:110px 60px;position:relative}
+.contact h2{font-size:clamp(54px,11vw,200px);line-height:.86}
+.contact h2 em{color:var(--gold)}
+.reach{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 28px}
+@media (max-width:960px){.reach{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.reach{grid-template-columns:minmax(0,1fr)}}
+.reach li{position:relative;padding-block:16px;display:flex;flex-direction:column;gap:6px;min-width:0;border-top:1px solid var(--line2)}
+.reach a,.reach code{font:400 clamp(15px,1.25vw,19px)/1.35 var(--sans);color:var(--fg);overflow-wrap:anywhere;user-select:all}
+.reach a:hover{color:var(--gold)}
+.copy{align-self:flex-start;appearance:none;background:none;border:1px solid var(--gold);color:var(--gold);cursor:pointer;border-radius:99px;
+  font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:15px 22px;transition:background .3s,color .3s}
+.copy:hover{background:var(--gold);color:var(--bg)}
+a.copy{display:inline-block}
+.copy.ghost{border-color:var(--line2);color:var(--fg)}
+.c-row{display:flex;flex-wrap:wrap;gap:12px}
+.skip{color:var(--gold);margin-left:8px}
+.brand .bs{display:none}
+@media (max-width:620px){.brand .bl{display:none}.brand .bs{display:inline}.bar nav{mask-image:linear-gradient(90deg,#000 86%,transparent)}.bar nav ul{padding-right:28px}}
+.foot{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;border-top:1px solid var(--line);padding-block:20px}
+
+/* =================== CINEMATIC (desktop) LAYOUT ===================
+   Added by JS (html.cine) only when the viewport is large enough and motion is allowed.
+   Without it, everything above is a normal readable document. */
+.cine .intro{position:relative;height:100vh;overflow:hidden}
+.cine .hero{position:absolute;inset:0;z-index:2;min-height:0}
+.cine .hero.dl{clip-path:inset(0 50% 0 0)}
+.cine .hero.dr{clip-path:inset(0 0 0 50%)}
+.cine .about{position:absolute;inset:0;display:flex;align-items:center;padding-block:80px 30px}
+.cine .about-in{width:100%}
+.seam{display:none}
+.cine .seam{display:block;position:absolute;z-index:3;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(transparent,var(--gold),transparent);opacity:0}
+.cine .work{height:100vh;padding-block:0;overflow:hidden;display:block}
+.cine .work-title{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:18px;padding-inline:inherit}
+.cine .proj{position:absolute;inset:0;padding:70px 5vw;visibility:hidden}
+.cine .rail{display:flex;position:absolute;left:0;right:0;bottom:26px;align-items:center;gap:18px}
+.cine .rail div{flex:1;height:1px;background:var(--line2);position:relative}
+.cine .rail div i{position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:0 50%}
+.cine .career{height:100vh;padding:0;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.cine .track{flex-direction:row;gap:3vw;width:max-content;align-items:stretch}
+.cine .career-head{width:50vw;flex:none;display:flex;flex-direction:column;justify-content:center;gap:18px;margin:0}
+.cine .plate{width:min(38vw,560px);flex:none;min-height:54vh}
+.cine .caps{height:100vh;padding-block:84px 30px;justify-content:center;overflow:hidden}
+.cine .contact{height:100vh;min-height:0}
+
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+<header class="bar"><div class="gut">
+  <a class="brand" href="#home" aria-label="Sai Ganesh Vuppala, index"><span class="bl">Sai Ganesh</span><span class="bs">SG</span><i>.</i></a>
+  <nav aria-label="Pages"><ul>
+    <li><a href="#home">Index</a></li><li><a href="#work">Work</a></li><li><a href="#career">Career</a></li><li><a href="#stack">Capabilities</a></li><li><a href="#resume">Résumé</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+</div></header>
+<div class="prog" id="prog"></div>
+
+<main>
+
+<!-- ============================ PAGE 1 · INDEX ============================ -->
+<section class="page" data-page="home" data-title="Index">
+  <div class="intro">
+    <div class="hero"><div class="hero-in gut">
+      <p class="label par" style="--k:6px"><b>Portfolio</b> · 2026 Edition</p>
+      <h1 class="par" style="--k:-14px"><span class="l1">Sai Ganesh</span><span class="l2">Vuppala</span></h1>
+      <p class="role par" style="--k:8px">AI Architect · AWS Architect · Amazon Connect · DevOps</p>
+      <p class="tag par" style="--k:12px">I design the systems behind the conversation.</p>
+      <p class="label corner l">Open to architecture and development roles</p>
+      <p class="label corner r cue">Scroll</p>
+    </div></div>
+    <i class="seam" aria-hidden="true"></i>
+    <div class="about"><div class="about-in gut">
+      <div class="about-copy">
+        <p class="label a-item"><b>01</b> · Introduction</p>
+        <h2><span class="mask"><span>Seven years on AWS.</span></span><span class="mask"><span>Now building the <em class="gold">AI</em></span></span><span class="mask"><span>inside the contact center.</span></span></h2>
+        <p class="bio a-item">I move enterprise contact centers from Genesys and LivePerson onto Amazon Connect, put Bedrock RAG and agents inside live chat and voice, and ship all of it through Terraform and GitHub Actions. After hours I build my own products end to end.</p>
+        <dl class="facts">
+          <div><dt>Now</dt><dd>Amazon Connect Architect (GenAI), UnitedHealth Group via Miratech</dd></div>
+          <div><dt>Before</dt><dd>Enbridge Gas · Capital One · Accenture · Morris Garages</dd></div>
+          <div><dt>Certified</dt><dd>CEH · CCNA · Google Cloud Professional Data Engineer</dd></div>
+          <div><dt>Studied</dt><dd>MS Computer Science, Central Michigan University</dd></div>
+        </dl>
+      </div>
+      <!-- PHOTO: replace sai.jpg with any 4:5 portrait; the grade is applied in CSS -->
+      <figure class="portrait"><img src="sai.jpg" alt="Sai Ganesh Vuppala in a grey blazer and sunglasses" width="640" height="800"><figcaption class="label">Sai Ganesh Vuppala</figcaption></figure>
+    </div></div>
+  </div>
+  <dl class="stats gut">
+    <div data-rv><dt>7+</dt><dd>years on AWS, from DevOps engineer to architect</dd></div>
+    <div data-rv><dt>4</dt><dd>industries: healthcare, financial services, energy, retail</dd></div>
+    <div data-rv><dt>2</dt><dd>legacy platforms migrated to Amazon Connect: Genesys and LivePerson</dd></div>
+    <div data-rv><dt>3</dt><dd>certifications: CEH, CCNA, Google Cloud Data Engineer</dd></div>
+  </dl>
+  <nav class="chapters gut" aria-label="Chapters">
+    <a href="#work" data-rv><span class="label"><b>02</b></span><strong>Selected Work</strong><span class="label r">Seven builds</span></a>
+    <a href="#career" data-rv><span class="label"><b>03</b></span><strong>Career</strong><span class="label r">2018 to now</span></a>
+    <a href="#stack" data-rv><span class="label"><b>04</b></span><strong>Capabilities</strong><span class="label r">Four disciplines</span></a>
+    <a href="#resume" data-rv><span class="label"><b>05</b></span><strong>Résumé</strong><span class="label r">Read or download</span></a>
+    <a href="#contact" data-rv><span class="label"><b>06</b></span><strong>Contact</strong><span class="label r">Say hello</span></a>
+  </nav>
+</section>
+
+<!-- ============================ PAGE 2 · WORK ============================ -->
+<section class="page" data-page="work" data-title="Work" hidden>
+  <div class="work gut">
+    <div class="work-title"><p class="label"><b>02</b> · Client and personal · 2023 to 2026</p><h2><span>Selected</span><span>Work</span></h2></div>
+
+    <!-- Each .proj has three layers in .p-viz: .back (plate), .main (mockup), .chip (detail).
+         The mockups are illustrations. To use a real screenshot, replace the .mock block
+         with <div class="shot"><img src="your-screenshot.jpg" alt="..."></div>. -->
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">01</span>
+        <p class="label"><b>Client</b> · UnitedHealth Group</p>
+        <h3>Bedrock inside Amazon Connect</h3>
+        <p class="desc">Legacy FAQ bots replaced by a RAG assistant that answers members in chat with the source attached, and agents that look up eligibility and claims through Lambda.</p>
+        <ul class="tags"><li>Bedrock Agents</li><li>Knowledge Bases</li><li>Guardrails</li><li>OpenSearch Serverless</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Architect</dd></div><div><dt>Sector</dt><dd>Healthcare</dd></div><div><dt>Source</dt><dd>Confidential</dd></div></dl>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>RAG</span></div>
+        <div class="ly main frame"><div class="tb">Member chat<span>Illustration</span></div><div class="mock">
+          <p class="q">Is physical therapy covered under my plan?</p>
+          <p class="a">An answer grounded in the plan's own benefits document, returned with its source.<small>Cited · benefits policy</small></p>
+          <p class="q">What about my open claim?</p>
+          <p class="a">Agent calls the claims API through a Lambda action group.<small>Action · claim status</small></p></div></div>
+        <div class="ly chip">Guardrails · PHI-safe</div></div>
+    </article>
+
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">02</span>
+        <p class="label"><b>Client</b> · Enbridge Gas · UnitedHealth Group</p>
+        <h3>A contact center deployed from a pull request</h3>
+        <p class="desc">Reusable Terraform modules for every Connect resource, promoted through four environments by GitHub Actions. Release cycles went from days to hours.</p>
+        <ul class="tags"><li>Terraform</li><li>GitHub Actions</li><li>OIDC</li><li>Drift detection</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Architect, engineer</dd></div><div><dt>Sector</dt><dd>Energy, healthcare</dd></div><div><dt>Source</dt><dd>Confidential</dd></div></dl>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>IaC</span></div>
+        <div class="ly main frame"><div class="tb">deploy.yml<span>Illustration</span></div><div class="mock">
+<pre><span class="hl">on: pull_request</span>
+  terraform fmt -check     <span class="ok">✓</span>
+  terraform validate       <span class="ok">✓</span>
+  terraform plan           <span class="ok">✓ posted to PR</span>
+<span class="hl">on: merge</span>
+  assume role via OIDC     <span class="ok">✓ no stored keys</span>
+  terraform apply          <span class="g">⏸ approval gate</span></pre>
+          <ol class="envs"><li>sandbox</li><li>dev</li><li>stage</li><li>prod</li></ol></div></div>
+        <div class="ly chip">Days → hours</div></div>
+    </article>
+
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">03</span>
+        <p class="label"><b>Personal</b> · Private repository · Live</p>
+        <h3>Traddx</h3>
+        <p class="desc">A live stock market tracker for India and the US in one app: prices and charts, fundamentals, a quality screener, IPO demand, insider deals, and two AI research assistants.</p>
+        <ul class="tags"><li>Python</li><li>Flask</li><li>PWA</li><li>Web push</li><li>Cloudflare</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Solo build</dd></div><div><dt>Markets</dt><dd>NSE, BSE, NYSE, Nasdaq</dd></div><div><dt>Source</dt><dd>Private</dd></div></dl>
+        <a class="go" href="https://traddx.in" target="_blank" rel="noopener">Visit traddx.in ↗</a>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>Markets</span></div>
+        <div class="ly main frame"><div class="tb">Traddx · chart<span>Illustration</span></div><div class="mock">
+          <svg id="candles" viewBox="0 0 400 170" preserveAspectRatio="none" role="img" aria-label="Illustrative candlestick chart"></svg>
+          <div class="quotes"><div><b>India</b>NSE · BSE</div><div><b>US</b>NYSE · Nasdaq</div><div><b>AI</b>Lakshmi · Athena</div></div></div></div>
+        <div class="ly chip">Screener · IPOs · Smart money</div></div>
+    </article>
+
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">04</span>
+        <p class="label"><b>Hackathon</b> · Public repository</p>
+        <h3>ConfPilot</h3>
+        <p class="desc">Describe yourself in one sentence and get a clash-free conference agenda, a reason for every talk, and the people worth meeting. Built for the Cloud Native Hackathon; it keeps working when the AI is down.</p>
+        <ul class="tags"><li>FastAPI</li><li>Elasticsearch</li><li>OpenTelemetry</li><li>Docker</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Solo build</dd></div><div><dt>Tracks</dt><dd>Elasticsearch, Dash0, Radar, Gitar</dd></div><div><dt>Source</dt><dd>Public</dd></div></dl>
+        <a class="go" href="https://github.com/vuppalasaiganesh/ConfPilot" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>Agenda</span></div>
+        <div class="ly main frame"><div class="tb">Your agenda<span>Illustration</span></div><div class="mock"><div class="agenda" id="agenda"></div></div></div>
+        <div class="ly chip">Zero clashes · a backup per slot</div></div>
+    </article>
+
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">05</span>
+        <p class="label"><b>Personal</b> · Private repository</p>
+        <h3>Jarvis</h3>
+        <p class="desc">A spoken personal assistant for macOS. Hearing and speech run entirely offline; a wake word or a hotkey summons it, and it works through calendar, mail, notes, markets and the web.</p>
+        <ul class="tags"><li>Python</li><li>faster-whisper</li><li>Wake word</li><li>macOS</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Solo build</dd></div><div><dt>Speech</dt><dd>On-device</dd></div><div><dt>Source</dt><dd>Private</dd></div></dl>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>Voice</span></div>
+        <div class="ly main frame"><div class="tb">Listening<span>Illustration</span></div><div class="mock">
+          <div class="wave" id="wave" aria-hidden="true"></div>
+          <p class="heard">"Jarvis, what's on my calendar tomorrow?"</p>
+          <p>wake word → transcribe → think → speak</p></div></div>
+        <div class="ly chip">Offline speech · ⌘⇧J</div></div>
+    </article>
+
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">06</span>
+        <p class="label"><b>Personal</b> · Private repository · In development</p>
+        <h3>Surya Simha</h3>
+        <p class="desc">An original one-on-one fighting game rooted in Indian history and mythology. Characters, arenas, animation and the entire soundtrack are generated in code.</p>
+        <ul class="tags"><li>Unity 6</li><li>C#</li><li>URP</li><li>Procedural audio</li><li>Android</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Solo build</dd></div><div><dt>Status</dt><dd>Working title</dd></div><div><dt>Source</dt><dd>Private</dd></div></dl>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>Duel</span></div>
+        <!-- Real render from the game repository -->
+        <div class="ly main frame"><div class="tb">Talwar duel<span>Staged render</span></div><div class="shot"><img src="surya-simha.jpg" alt="Two procedurally generated warriors in a sword duel in a sandstone arena" width="1100" height="619"></div></div>
+        <div class="ly chip">Procedural characters and arenas</div></div>
+    </article>
+
+    <article class="proj">
+      <div class="p-text"><span class="p-num" aria-hidden="true">07</span>
+        <p class="label"><b>Personal</b> · Public repository</p>
+        <h3>ServiceNow AI Agent</h3>
+        <p class="desc">Reads an inbox on a schedule, classifies each email with Gemini, opens the incident or change request in ServiceNow, and sends the approval email for changes.</p>
+        <ul class="tags"><li>Python</li><li>Gemini API</li><li>Gmail API</li><li>ServiceNow</li></ul>
+        <dl class="meta"><div><dt>Role</dt><dd>Solo build</dd></div><div><dt>Runs</dt><dd>Every 30 minutes</dd></div><div><dt>Source</dt><dd>Public</dd></div></dl>
+        <a class="go" href="https://github.com/vuppalasaiganesh/Servicenow_Ai_Agent" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <div class="p-viz"><div class="ly back"><span>Agent</span></div>
+        <div class="ly main frame"><div class="tb">Run<span>Illustration</span></div><div class="mock"><ol class="steps">
+          <li><b>01</b><span>Unread email fetched</span></li><li><b>02</b><span>Gemini classifies it</span></li>
+          <li><b>03</b><span>Incident or change created</span></li><li><b>04</b><span>Approval email sent</span></li></ol></div></div>
+        <div class="ly chip">Inbox → ticket, unattended</div></div>
+    </article>
+
+    <div class="rail gut"><span class="label" id="count">00 / 07</span><div><i></i></div><span class="label" id="pname">Selected Work</span><a class="label skip" href="#" id="skip">Skip to repositories ↓</a></div>
+  </div>
+
+  <div class="index gut">
+    <p class="label"><b>GitHub</b> · github.com/vuppalasaiganesh</p>
+    <h2>More from the repositories</h2>
+    <ul>
+      <li data-rv><div class="row"><strong>Sraga PDF Studio</strong><p>Native Android PDF editor with scanning, redaction, signatures and offline conversion between PDF, PowerPoint and spreadsheets.</p><span class="label lang">Java · Android</span><span class="label vis pv">Private</span></div></li>
+      <li data-rv><div class="row"><strong>Folio Notes</strong><p>Handwriting notebook for Android and the browser: pressure-sensitive ink, speech to text and PDF export.</p><span class="label lang">TypeScript · Android</span><span class="label vis pv">Private</span></div></li>
+      <li data-rv><a class="row" href="https://github.com/vuppalasaiganesh/Combined_Agent" target="_blank" rel="noopener"><strong>Combined Agent</strong><p>One scheduled agent tying Gmail, Gemini, ServiceNow and AWS together for email-driven operations.</p><span class="label lang">Python</span><span class="label vis">Public ↗</span></a></li>
+      <li data-rv><a class="row" href="https://github.com/vuppalasaiganesh/Atonomous_Cloud_Computing" target="_blank" rel="noopener"><strong>Autonomous Cloud Computing</strong><p>FastAPI service for managing cloud resources, with auth, audit, notifications and Terraform deployment.</p><span class="label lang">Python · Terraform</span><span class="label vis">Public ↗</span></a></li>
+      <li data-rv><a class="row" href="https://github.com/vuppalasaiganesh/tf-ec2-module" target="_blank" rel="noopener"><strong>tf-ec2-module</strong><p>Reusable Terraform module for an EC2 instance and a locked-down security group, with a runnable example.</p><span class="label lang">HCL</span><span class="label vis">Public ↗</span></a></li>
+      <li data-rv><a class="row" href="https://github.com/vuppalasaiganesh/network-job-dashboard" target="_blank" rel="noopener"><strong>Network Job Dashboard</strong><p>Streamlit dashboard that gathers and filters network engineering job listings every hour.</p><span class="label lang">Python · Streamlit</span><span class="label vis">Public ↗</span></a></li>
+    </ul>
+  </div>
+  <a class="next gut" href="#career"><span class="label"><b>Next</b> · 03</span><strong>Career <span>→</span></strong></a>
+</section>
+
+<!-- ============================ PAGE 3 · CAREER ============================ -->
+<section class="page" data-page="career" data-title="Career" hidden>
+  <div class="career">
+    <div class="track gut">
+      <div class="career-head"><p class="label"><b>03</b> · 2018 to now</p><h2>Five teams, one direction: <em>up the stack.</em></h2><p class="label">Scroll to travel →</p></div>
+      <article class="plate frame"><span class="yr">2026</span><p class="org">Miratech · UnitedHealth Group · Jan 2026 to present</p><h3>Amazon Connect Architect (GenAI)</h3><ul>
+        <li>Architect the migration of chat and voice from LivePerson and Genesys to Amazon Connect across lines of business.</li>
+        <li>Bedrock RAG assistant and Agents with Guardrails inside member chat.</li>
+        <li>Terraform modules and GitHub Actions with OIDC and approval-gated promotion.</li></ul></article>
+      <article class="plate frame"><span class="yr">2024</span><p class="org">Enbridge Gas · May 2024 to Dec 2025</p><h3>Amazon Connect Developer</h3><ul>
+        <li>Contact flows for service, outage and billing, including emergency call treatment.</li>
+        <li>Bedrock Knowledge Bases in agent-assist with an event-refreshed RAG pipeline.</li>
+        <li>All infrastructure moved to Terraform and GitHub Actions: days to hours.</li></ul></article>
+      <article class="plate frame"><span class="yr">2023</span><p class="org">Capital One · May 2023 to May 2024</p><h3>Amazon Connect Engineer</h3><ul>
+        <li>Rebuilt Genesys IVR, skills routing and queues in Connect for card servicing.</li>
+        <li>Ran migration-wave telephony and production cutovers with rollback runbooks.</li>
+        <li>PCI-DSS controls: IAM boundaries, KMS, redacted logging.</li></ul></article>
+      <article class="plate frame"><span class="yr">2021</span><p class="org">Accenture · Jan 2021 to Dec 2022</p><h3>AWS Engineer</h3><ul>
+        <li>Legacy systems migrated to cloud-native, API-driven backends in Python and Java.</li>
+        <li>Event-driven pipelines on Lambda, Step Functions, EventBridge and Kinesis.</li>
+        <li>Microservices on Docker and EKS.</li></ul></article>
+      <article class="plate frame"><span class="yr">2018</span><p class="org">Morris Garages · Jun 2018 to Dec 2020</p><h3>DevOps Engineer</h3><ul>
+        <li>CI/CD with Jenkins and GitHub Actions across staging and production.</li>
+        <li>Infrastructure provisioned with CloudFormation.</li>
+        <li>Containers on Kubernetes (EKS).</li></ul></article>
+      <article class="plate frame"><span class="yr">MS</span><p class="org">Central Michigan University · Mount Pleasant, MI</p><h3>Master's in Computer Science</h3><ul>
+        <li>Certified Ethical Hacker (CEH), EC-Council.</li>
+        <li>Cisco Certified Network Associate (CCNA).</li>
+        <li>Google Cloud Professional Data Engineer.</li></ul></article>
+    </div>
+  </div>
+  <a class="next gut" href="#stack"><span class="label"><b>Next</b> · 04</span><strong>Capabilities <span>→</span></strong></a>
+</section>
+
+<!-- ============================ PAGE 4 · CAPABILITIES ============================ -->
+<section class="page" data-page="stack" data-title="Capabilities" hidden>
+  <div class="caps gut">
+    <div><p class="label"><b>04</b> · Disciplines and tools</p><h2>Four disciplines, <em>one architect.</em></h2></div>
+    <div class="deck">
+      <article class="card frame"><p class="label">I</p><h3>AI Architect</h3><hr><ul><li>Amazon Bedrock</li><li>Knowledge Bases and RAG</li><li>Agents and action groups</li><li>Guardrails and evaluation</li><li>OpenSearch Serverless, Kendra</li><li>Lex V2, Amazon Q in Connect</li></ul></article>
+      <article class="card frame"><p class="label">II</p><h3>AWS Architect</h3><hr><ul><li>Lambda, Step Functions</li><li>API Gateway, EventBridge</li><li>Kinesis, SQS, SNS</li><li>DynamoDB, S3, Athena, Glue</li><li>IAM, KMS, PrivateLink</li><li>HIPAA and PCI-DSS</li></ul></article>
+      <article class="card frame"><p class="label">III</p><h3>Connect Architect</h3><hr><ul><li>Contact flows and modules</li><li>Omnichannel routing</li><li>Telephony and number porting</li><li>Genesys and LivePerson migration</li><li>Agent Workspace apps</li><li>Contact Lens, Streams API</li></ul></article>
+      <article class="card frame"><p class="label">IV</p><h3>DevOps Engineer</h3><hr><ul><li>Terraform modules</li><li>GitHub Actions with OIDC</li><li>Remote state, drift detection</li><li>Docker, Kubernetes, EKS</li><li>CloudWatch, X-Ray, DataDog</li><li>Python, Node.js, Java</li></ul></article>
+    </div>
+    <ul class="certs">
+      <li><b>CEH</b><span>Certified Ethical Hacker<br>EC-Council</span></li>
+      <li><b>CCNA</b><span>Cisco Certified Network Associate<br>Cisco</span></li>
+      <li><b>GCP</b><span>Professional Data Engineer<br>Google Cloud</span></li>
+    </ul>
+  </div>
+  <a class="next gut" href="#resume"><span class="label"><b>Next</b> · 05</span><strong>Résumé <span>→</span></strong></a>
+</section>
+
+<!-- ============================ PAGE 5 · RÉSUMÉ ============================
+     The text below mirrors SaiGanesh_Vuppala_Resume.pdf. The download button saves that PDF. -->
+<section class="page" data-page="resume" data-title="Résumé" hidden>
+  <div class="resume gut">
+    <aside class="r-side">
+      <p class="label"><b>05</b> · Two pages · Updated November 2026</p>
+      <h2><em>Résumé</em></h2>
+      <p class="r-lead">AI Architect, AWS Solutions Architect, Amazon Connect Architect and Developer, DevOps Engineer.</p>
+      <a class="copy" id="dl" href="SaiGanesh_Vuppala_Resume.pdf" download>Download PDF</a>
+      <p class="label" id="dlnote" hidden></p>
+      <ul class="r-contact label"><li>vuppalasaiganesh144@gmail.com</li><li>(385) 467-1732 · (989) 944-7284</li><li><a href="https://www.linkedin.com/in/sai-ganesh-v-a94433206" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://github.com/vuppalasaiganesh" target="_blank" rel="noopener">GitHub ↗</a></li></ul>
+    </aside>
+    <div class="sheet frame"><section class="r-sec"><h3>Summary</h3><p>AI and AWS Solutions Architect with 7+ years delivering cloud, contact center, and DevOps platforms across Healthcare, Financial Services, Energy, and Retail. Architects Generative AI on Amazon Bedrock (Knowledge Bases, Agents, Guardrails, RAG) and embeds it in Amazon Connect chat and voice. Leads enterprise migrations from Genesys and LivePerson to Amazon Connect through hybrid coexistence, number porting, and production cutover. Owns infrastructure end to end with reusable Terraform modules and GitHub Actions CI/CD, secured for HIPAA and PCI-DSS.</p></section><section class="r-sec"><h3>Technical skills</h3><dl class="r-skills"><div><dt>Generative AI &amp; RAG</dt><dd>Amazon Bedrock (Knowledge Bases, Agents, Action Groups, Guardrails, Prompt Engineering), RAG (chunking, Titan Embeddings, semantic retrieval, re-ranking), OpenSearch Serverless, Kendra, Amazon Q in Connect, Lex V2, Transcribe, Comprehend, Polly</dd></div><div><dt>Amazon Connect</dt><dd>Contact Flows &amp; Modules, Omnichannel Voice/Chat/Task Routing, IVR, Queues, Routing Profiles, Telephony (DID/Toll-Free Porting, Carrier/SIP Routing), Agent Workspace, CCP &amp; Streams API, Contact Lens, Customer Profiles, CTRs, Metrics APIs, Genesys and LivePerson Migration, Hybrid Coexistence &amp; Cutover</dd></div><div><dt>DevOps, IaC &amp; CI/CD</dt><dd>Terraform (modules, remote state, workspaces, drift detection), GitHub Actions (OIDC, sandbox → dev → stage → prod, approval gates), CloudFormation, Jenkins, CodePipeline, CodeBuild, SonarQube, Docker, Kubernetes, OpenShift, Git</dd></div><div><dt>AWS Platform</dt><dd>Lambda, Step Functions, API Gateway, EventBridge, SQS, SNS, Kinesis Data Streams &amp; Firehose, ECS &amp; Fargate, EKS, EC2, DynamoDB, S3, Athena, Glue, OpenSearch, QuickSight, Redshift, VPC, Route 53, CloudFront, Transit Gateway, Direct Connect</dd></div><div><dt>Security &amp; Compliance</dt><dd>IAM (roles, permission boundaries, SCPs), KMS, Secrets Manager, VPC Endpoints, PrivateLink, WAF, HIPAA, PCI-DSS, RBAC, Security Assessment &amp; Hardening (CEH)</dd></div><div><dt>Observability</dt><dd>CloudWatch (Alarms, Logs Insights, Dashboards), X-Ray, CloudTrail, ELK, DataDog, New Relic, Load &amp; Regression Testing, Incident Management &amp; RCA</dd></div><div><dt>Languages &amp; Platforms</dt><dd>Python (primary), Node.js, Java (Spring Boot), Bash, React; Linux (Amazon Linux, Ubuntu, RHEL), Windows Server; GCP (Professional Data Engineer), Azure</dd></div></dl></section><section class="r-sec"><h3>Experience</h3><article class="r-job"><header><strong>Amazon Connect Architect (GenAI)</strong><span>Miratech · UnitedHealth Group</span><em>January 2026 – Present</em></header><ul><li>Architect the enterprise migration of chat and voice from LivePerson and Genesys to Amazon Connect across multiple lines of business, owning target-state design, routing model, and integration blueprint.</li><li>Replaced legacy FAQ bots with a Bedrock RAG assistant: policy and benefits content on S3, embedded with Titan, indexed in OpenSearch Serverless, and served as citation-backed answers in Connect chat via a Knowledge Base.</li><li>Develop Bedrock Agents with Lambda action groups calling member APIs for eligibility, claim status, and case lookup, with Guardrails enforcing PHI-safe responses and evaluation harnesses tuning relevance and containment.</li><li>Design Genesys–Connect hybrid coexistence for phased cutovers: carrier routing splits, cross-platform transfers with context passing, DID/toll-free porting plans, and rollback runbooks.</li><li>Author reusable Terraform modules for Connect instances, contact flows, queues, routing profiles, Lambda/Lex associations, Kinesis streams, and IAM roles, with remote state and drift detection.</li><li>Own delivery through GitHub Actions with OIDC role assumption, running fmt/validate/plan on pull requests and promoting applies from sandbox through production behind approval gates.</li><li>Built a "ghost agent" auto-offline fix (agent event stream, Kinesis, Lambda, DynamoDB, EventBridge) that forces stale CCP sessions offline to protect routing accuracy.</li><li>Designed a Repeat Contact Rate pipeline (CTR stream, Kinesis, Lambda, DynamoDB) surfaced in a custom Contact Intelligence app embedded in the Connect Agent Workspace.</li><li>Enforce HIPAA-aligned security with IAM permission boundaries, SCPs, KMS, Secrets Manager, and VPC isolation; run integration, regression, and load testing before each cutover.</li><li>Partner with LOB stakeholders, client architects, and AWS specialists on design reviews, and mentor engineers on Connect flow patterns, Bedrock/RAG, and Terraform delivery.</li></ul></article><article class="r-job"><header><strong>Amazon Connect Developer</strong><span>Enbridge Gas</span><em>May 2024 – December 2025</em></header><ul><li>Developed Connect contact flows for customer service, outage reporting, and billing, with IVR menus, natural-language capture, priority routing, callbacks, and emergency call treatment.</li><li>Integrated Bedrock Knowledge Bases into agent-assist with a RAG ingestion pipeline (S3, embeddings, OpenSearch vector index refreshed by EventBridge-triggered Lambda) serving grounded answers during live contacts.</li><li>Deployed all Connect infrastructure with Terraform and GitHub Actions (lint, plan, apply on merge, per-environment secrets), eliminating console drift and cutting release cycles from days to hours.</li><li>Built Lex V2 bots with Lambda fulfillment against billing and account systems, and standardized error handling so flows degraded gracefully instead of dropping contacts.</li><li>Streamed Contact Trace Records through Kinesis and Firehose into S3, cataloged with Glue and queried with Athena for contact volume, handle time, and abandonment reporting in QuickSight.</li><li>Enabled Contact Lens sentiment, category rules, and redaction; applied least-privilege IAM, KMS, and VPC endpoints.</li></ul></article><article class="r-job"><header><strong>Amazon Connect Engineer</strong><span>Capital One, TX</span><em>May 2023 – May 2024</em></header><ul><li>Supported the Genesys-to-Amazon Connect transition for card servicing, rebuilding IVR flows, skills-based routing, and queue logic in Connect and validating parity before each cutover.</li><li>Executed telephony changes for migration waves (DID/toll-free porting, carrier routing updates, Genesys–Connect transfers) and ran production cutovers with rollback runbooks.</li><li>Implemented in-flow customer verification with Lambda lookups against core banking APIs through API Gateway, passing verified context to agents.</li><li>Integrated Lex bots and early Bedrock prototypes into chat for intent triage and wrap-up summaries, plus a retrieval pipeline over policy documents for agent answer suggestions.</li><li>Delivered infrastructure with Terraform and CloudFormation and CI/CD with GitHub Actions, CodePipeline, and CodeBuild for zero-downtime releases with automated rollback.</li><li>Enforced PCI-DSS controls with IAM role boundaries, KMS encryption, redacted logging, and network segregation; led incident response and root cause analysis during high-volume periods.</li></ul></article><article class="r-job"><header><strong>AWS Engineer</strong><span>Accenture, India</span><em>January 2021 – December 2022</em></header><ul><li>Migrated legacy systems to cloud-native, API-driven AWS backends in Python and Java (Spring Boot), with event-driven pipelines on Lambda, Step Functions, EventBridge, and Kinesis.</li><li>Created reusable Terraform and CloudFormation modules and CI/CD pipelines (GitHub Actions, Jenkins, CodePipeline) with automated deployment and rollback.</li><li>Containerized microservices with Docker and Amazon EKS, with observability through CloudWatch, X-Ray, CloudTrail, and ELK.</li></ul></article><article class="r-job"><header><strong>DevOps Engineer</strong><span>Morris Garages</span><em>June 2018 – December 2020</em></header><ul><li>Built CI/CD pipelines with Jenkins and GitHub Actions automating build, test, and deployment across staging and production.</li><li>Authored CloudFormation templates for infrastructure provisioning, reducing deployment time and eliminating configuration drift.</li><li>Containerized applications with Docker on Kubernetes (EKS) and built serverless services with Lambda, API Gateway, SQS, SNS, and EventBridge.</li></ul></article></section><section class="r-sec"><h3>Certifications and education</h3><ul class="r-plain"><li><strong>Certified Ethical Hacker (CEH)</strong> · EC-Council</li><li><strong>Cisco Certified Network Associate (CCNA)</strong> · Cisco</li><li><strong>Professional Data Engineer</strong> · Google Cloud</li><li><strong>Master’s in Computer Science</strong> · Central Michigan University, Mount Pleasant, MI</li></ul></section></div>
+  </div>
+  <a class="next gut" href="#contact"><span class="label"><b>Next</b> · 06</span><strong>Contact <span>→</span></strong></a>
+</section>
+
+<!-- ============================ PAGE 6 · CONTACT ============================ -->
+<section class="page" data-page="contact" data-title="Contact" hidden>
+  <div class="contact gut">
+    <p class="label c-item"><b>06</b> · Open to architecture and development roles</p>
+    <h2><span class="mask"><span>Let's build</span></span><span class="mask"><span><em>something</em> that</span></span><span class="mask"><span>answers back.</span></span></h2>
+    <ul class="reach">
+      <li><span class="label">Email</span><code id="email">vuppalasaiganesh144@gmail.com</code></li>
+      <li><span class="label">Phone</span><a href="tel:+13854671732">(385) 467-1732</a><a href="tel:+19899447284">(989) 944-7284</a></li>
+      <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/sai-ganesh-v-a94433206" target="_blank" rel="noopener">sai-ganesh-v ↗</a></li>
+      <li><span class="label">GitHub</span><a href="https://github.com/vuppalasaiganesh" target="_blank" rel="noopener">vuppalasaiganesh ↗</a></li>
+    </ul>
+    <div class="c-row c-item"><button class="copy" id="copy" type="button">Copy email</button><a class="copy ghost" href="#resume">Read the résumé →</a></div>
+  </div>
+  <div class="foot gut"><span class="label">Sai Ganesh Vuppala · 2026</span><a class="label" href="#home">Back to index ↑</a></div>
+</section>
+
+</main>
+
+<div class="vig" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+<div class="shutter" id="shutter" aria-hidden="true"><i></i><i></i><b id="shlabel"></b></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+(function(){
+  var $ = function(s,c){ return (c||document).querySelector(s); };
+  var $$ = function(s,c){ return [].slice.call((c||document).querySelectorAll(s)); };
+  var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGsap = !!(window.gsap && window.ScrollTrigger);
+  var motion = hasGsap && !reduced;
+  // Full cinematic mode: pinned stages. Smaller screens get the simplified reveal set.
+  var cine = motion && matchMedia('(min-width: 960px) and (min-height: 620px)').matches;
+  var pages = $$('.page'), names = pages.map(function(p){ return p.dataset.page; });
+  var links = $$('.bar nav a');
+  var current = null, busy = false, queued = null, ctx = null, lenis = null;
+
+  /* ---------- illustrative mock content ---------- */
+  (function(){
+    var c = $('#candles'), d = [52,58,55,63,60,70,66,74,69,80,77,88,84,95,90,101,97,108,112,106,118,124], h = '';
+    d.forEach(function(v,i){
+      var prev = i ? d[i-1] : v-5, up = v >= prev, x = 10 + i*17.6, top = 160 - Math.max(v,prev), bh = Math.max(4, Math.abs(v-prev));
+      var col = up ? '#c9a96a' : '#4d6f72';
+      h += '<line x1="'+(x+4)+'" x2="'+(x+4)+'" y1="'+(top-7)+'" y2="'+(top+bh+7)+'" stroke="'+col+'" stroke-width="1"/><rect x="'+x+'" y="'+top+'" width="8" height="'+bh+'" fill="'+col+'"/>';
+    });
+    c.innerHTML = '<path d="M0 42H400M0 85H400M0 128H400" stroke="rgba(244,244,246,.08)" fill="none"/>' + h;
+    var a = $('#agenda'), slots = ['09:00','10:30','13:00','15:00'], talks = [['OpenTelemetry at scale',1],['eBPF for SREs',0],['Hallway track',0],['Platform teams',0],['Tracing a bank',1],['GPU scheduling',0],['Lunch',0],['Observability costs',1],['Service mesh',0],['Kernel deep dive',0],['Backup: eBPF lab',0],['Meet: 3 people',1]];
+    var out = '';
+    slots.forEach(function(s,r){ out += '<i>'+s+'</i>'; for (var k=0;k<3;k++){ var t = talks[r*3+k]; out += '<b'+(t[1]?' class="on"':'')+'>'+t[0]+'</b>'; } });
+    a.innerHTML = out;
+    var w = $('#wave'), wb = '';
+    for (var i=0;i<44;i++){ var amp = 18 + Math.abs(Math.sin(i*.55)*Math.cos(i*.21))*82; wb += '<i style="height:'+amp.toFixed(0)+'%"></i>'; }
+    w.innerHTML = wb;
+  })();
+
+  /* ---------- copy email ---------- */
+  var btn = $('#copy'), email = $('#email');
+  btn.addEventListener('click', function(){
+    function sel(){ var r = document.createRange(); r.selectNodeContents(email); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected, press copy'; }
+    try { navigator.clipboard.writeText(email.textContent).then(function(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy email'; }, 1800); }, sel); } catch(e){ sel(); }
+  });
+
+  /* ---------- résumé download ----------
+     On your own hosting the link downloads the PDF directly. Inside a claude.ai artifact,
+     direct downloads are blocked, so the page asks the viewer through the downloads capability. */
+  var dl = $('#dl'), dlNote = $('#dlnote'), saver = null;
+  if (window.claude && window.claude.use){
+    dl.hidden = true;
+    window.claude.use('downloads').then(function(ns){
+      if (ns){ saver = ns; dl.hidden = false; }
+      else { dlNote.hidden = false; dlNote.textContent = 'PDF download is not available in this view. The full text is on this page.'; }
+    });
+  }
+  dl.addEventListener('click', function(e){
+    if (!saver) return; // plain link behaviour
+    e.preventDefault();
+    dl.textContent = 'Preparing';
+    fetch(dl.getAttribute('href')).then(function(r){ if (!r.ok) throw new Error('missing'); return r.blob(); })
+      .then(function(b){ return saver.save({filename:'SaiGanesh_Vuppala_Resume.pdf', data:b}); })
+      .then(function(){ dl.textContent = 'Saved'; }, function(err){
+        dl.textContent = 'Download PDF';
+        if (!err || err.code !== 'declined'){ dlNote.hidden = false; dlNote.textContent = 'The download did not go through. The full text is on this page.'; }
+      });
+  });
+
+  // Left and right arrow keys move between pages.
+  document.addEventListener('keydown', function(e){
+    if (e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+    var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0, i = names.indexOf(current) + d;
+    if (d && i >= 0 && i < names.length) location.hash = names[i];
+  });
+
+  function show(name){
+    pages.forEach(function(p){ p.hidden = p.dataset.page !== name; });
+    links.forEach(function(a){ if (a.getAttribute('href') === '#'+name) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    current = name;
+    if (lenis) lenis.scrollTo(0,{immediate:true,force:true});
+    window.scrollTo(0,0);
+  }
+  function target(){ var h = location.hash.slice(1); return names.indexOf(h) > -1 ? h : 'home'; }
+
+  /* No GSAP (blocked CDN) or reduced motion: plain pages, instant navigation. */
+  if (!motion){
+    window.addEventListener('hashchange', function(){ show(target()); });
+    show(target());
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.defaults({ease:'power3.out'});
+  if (cine){
+    document.documentElement.classList.add('cine');
+    // Hero doors: duplicate the hero so each half can slide away independently.
+    var hero = $('.hero'), twin = hero.cloneNode(true);
+    hero.classList.add('dl'); twin.classList.add('dr'); twin.setAttribute('aria-hidden','true');
+    hero.parentNode.insertBefore(twin, hero.nextSibling);
+    // Subtle mouse parallax, hero only (CSS variables read by .par elements).
+    var intro = $('.intro');
+    intro.addEventListener('pointermove', function(e){
+      intro.style.setProperty('--px', (e.clientX/innerWidth - .5).toFixed(3));
+      intro.style.setProperty('--py', (e.clientY/innerHeight - .5).toFixed(3));
+    });
+  }
+
+  /* ---------- Lenis smooth scroll, driven by GSAP's ticker ---------- */
+  if (window.Lenis){
+    lenis = new Lenis({duration:1.25, smoothWheel:true});
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(function(t){ lenis.raf(t*1000); });
+    gsap.ticker.lagSmoothing(0);
+  }
+
+  /* ===================== per-page ScrollTrigger setups ===================== */
+  var introDone = false;
+  var SCRUB = .7; // seconds of catch-up: gives the movement weight without lag
+
+  // Generic scrubbed reveal for un-pinned rows (and for every page in simplified mode).
+  function reveals(root, sel){
+    $$(sel || '[data-rv]', root).forEach(function(el){
+      gsap.fromTo(el, {y:46, autoAlpha:0}, {y:0, autoAlpha:1, ease:'none',
+        scrollTrigger:{trigger:el, start:'top 100%', end:'top 84%', scrub:SCRUB}});
+    });
+  }
+
+  var init = {
+    /* HOME — one pinned stage. The hero is two door halves over the About layer.
+       0.0–0.5  name lines pull apart, role and tagline lift away
+       0.1–1.0  doors slide open along a gold seam
+       0.5–1.5  About assembles: portrait unmasks, headline lines rise, facts draw in */
+    home: function(root){
+      var tl = gsap.timeline({defaults:{ease:'power2.inOut'},
+        scrollTrigger:{trigger:$('.intro',root), pin:true, start:'top top', end:'+=260%', scrub:SCRUB}});
+      tl.to($$('.hero .l1',root), {xPercent:-9, duration:.5}, 0)
+        .to($$('.hero .l2',root), {xPercent:9, duration:.5}, 0)
+        .to($$('.hero .role, .hero .tag, .hero .corner, .hero-in > .label',root), {autoAlpha:0, y:-24, duration:.3}, 0)
+        .fromTo($('.seam',root), {opacity:0, scaleY:0}, {opacity:1, scaleY:1, duration:.25}, .02)
+        .to($('.hero.dl',root), {xPercent:-50, duration:.9}, .12)
+        .to($('.hero.dr',root), {xPercent:50, duration:.9}, .12)
+        .to($('.seam',root), {opacity:0, duration:.3}, .5)
+        .fromTo($('.portrait',root), {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:.7}, .45)
+        .fromTo($('.portrait img',root), {scale:1.3}, {scale:1, duration:1.1, ease:'power2.out'}, .45)
+        .fromTo($$('.about .mask > span',root), {yPercent:115}, {yPercent:0, duration:.5, stagger:.09, ease:'power3.out'}, .55)
+        .fromTo($$('.about .a-item',root), {y:36, autoAlpha:0}, {y:0, autoAlpha:1, duration:.4, stagger:.1, ease:'power3.out'}, .7);
+      $$('.facts div',root).forEach(function(row,i){
+        // line draw first (CSS variable --w scales the rule), then the row's text
+        tl.fromTo(row, {'--w':0}, {'--w':1, duration:.35}, .95 + i*.1)
+          .fromTo(row.children, {y:18, autoAlpha:0}, {y:0, autoAlpha:1, duration:.3, stagger:.04, ease:'power3.out'}, 1.05 + i*.1);
+      });
+      tl.to({}, {duration:.35}); // hold the finished frame before unpinning
+      reveals(root);
+      // One-time entrance on first load (the only non-scrubbed motion besides the shutter).
+      if (!introDone){ introDone = true;
+        gsap.from($$('.hero h1 span',root), {yPercent:45, autoAlpha:0, duration:1.4, stagger:.14, ease:'expo.out', delay:.15}); }
+    },
+
+    /* WORK — the longest pin. One master timeline, one "act" per project (1 unit each):
+       enter 0–.45  text rises line by line; plate, mockup and chip fly in from separated positions
+       hold  .45–.72 slow drift
+       exit  .72–1  the three layers pull apart again and the text lifts out
+       The rail and counter are driven from the same timeline. */
+    work: function(root){
+      var stage = $('.work',root), projs = $$('.proj',root), N = projs.length;
+      var count = $('#count'), pname = $('#pname'), LEAD = .45;
+      var tl = gsap.timeline({
+        scrollTrigger:{trigger:stage, pin:true, start:'top top', end:'+=' + (N*115 + 60) + '%', scrub:SCRUB,
+          onUpdate:function(self){
+            var i = Math.max(-1, Math.min(N-1, Math.floor(self.progress * tl.duration() - LEAD + .08)));
+            count.textContent = (i < 0 ? '00' : ('0'+(i+1))) + ' / 0' + N;
+            pname.textContent = i < 0 ? 'Selected Work' : $('h3', projs[i]).textContent;
+          }}});
+      // Title card splits left and right to make room.
+      var ts = $$('.work-title h2 span',root);
+      tl.to(ts[0], {xPercent:-70, autoAlpha:0, duration:.45, ease:'power2.in'}, 0)
+        .to(ts[1], {xPercent:70, autoAlpha:0, duration:.45, ease:'power2.in'}, 0)
+        .to($('.work-title .label',root), {autoAlpha:0, duration:.25}, 0);
+      projs.forEach(function(p,i){
+        var t0 = LEAD + i, text = $$('.p-text > *:not(.p-num)', p), num = $('.p-num',p);
+        var back = $('.ly.back',p), main = $('.ly.main',p), chip = $('.ly.chip',p);
+        tl.set(p, {autoAlpha:1}, t0)
+          // assemble
+          .fromTo(text, {y:70, autoAlpha:0}, {y:0, autoAlpha:1, duration:.4, stagger:.035}, t0)
+          .fromTo(num, {yPercent:40, autoAlpha:0}, {yPercent:0, autoAlpha:1, duration:.5}, t0)
+          .fromTo(back, {x:190, y:100, rotation:8, autoAlpha:0}, {x:0, y:0, rotation:0, autoAlpha:1, duration:.45}, t0)
+          .fromTo(main, {clipPath:'inset(100% 0% 0% 0%)', y:130, scale:.92}, {clipPath:'inset(0% 0% 0% 0%)', y:0, scale:1, duration:.5}, t0 + .05)
+          .fromTo(chip, {x:-110, y:-60, autoAlpha:0}, {x:0, y:0, autoAlpha:1, duration:.4}, t0 + .2)
+          // hold: slow drift so the frame never sits dead
+          .to(back, {y:-16, duration:.27, ease:'none'}, t0 + .45)
+          .to(num, {yPercent:-12, duration:.27, ease:'none'}, t0 + .5);
+        if (i < N-1){
+          // disassemble
+          tl.to(text, {y:-70, autoAlpha:0, duration:.26, stagger:.02, ease:'power2.in'}, t0 + .72)
+            .to(num, {yPercent:-50, autoAlpha:0, duration:.28, ease:'power2.in'}, t0 + .72)
+            .to(back, {x:-200, rotation:-7, autoAlpha:0, duration:.28, ease:'power2.in'}, t0 + .72)
+            .to(main, {clipPath:'inset(0% 0% 100% 0%)', y:-90, duration:.28, ease:'power2.in'}, t0 + .72)
+            .to(chip, {y:80, autoAlpha:0, duration:.24, ease:'power2.in'}, t0 + .72)
+            .set(p, {autoAlpha:0}, t0 + 1);
+        }
+      });
+      tl.to({}, {duration:.3});
+      tl.fromTo($('.rail i',root), {scaleX:0}, {scaleX:1, ease:'none', duration:tl.duration()}, 0);
+      reveals(root);
+      reveals(root, '.next');
+      // Let people leave the long pin: jump straight to the repository list.
+      $('#skip').onclick = function(e){ e.preventDefault(); var t = $('.index',root);
+        if (lenis) lenis.scrollTo(t, {duration:1.6}); else t.scrollIntoView(); };
+    },
+
+    /* CAREER — pinned horizontal track. Vertical scroll drives the track sideways (ease none,
+       so it can act as a containerAnimation); each plate swings flat and its contents rise
+       as it crosses the frame. */
+    career: function(root){
+      var track = $('.track',root);
+      var dist = function(){ return Math.max(0, track.scrollWidth - innerWidth); };
+      var slide = gsap.to(track, {x:function(){ return -dist(); }, ease:'none',
+        scrollTrigger:{trigger:$('.career',root), pin:true, start:'top top', scrub:SCRUB, invalidateOnRefresh:true,
+          end:function(){ return '+=' + dist(); }}});
+      $$('.plate',root).forEach(function(pl){
+        gsap.fromTo(pl, {rotationY:-16, transformPerspective:1200, transformOrigin:'0% 50%', autoAlpha:.2},
+          {rotationY:0, autoAlpha:1, ease:'none', scrollTrigger:{trigger:pl, containerAnimation:slide, start:'left 100%', end:'left 62%', scrub:true}});
+        gsap.fromTo(pl.children, {y:44, autoAlpha:0}, {y:0, autoAlpha:1, stagger:.08, ease:'none',
+          scrollTrigger:{trigger:pl, containerAnimation:slide, start:'left 92%', end:'left 50%', scrub:true}});
+      });
+      reveals(root, '.next');
+    },
+
+    /* CAPABILITIES — pinned deck. Four cards start stacked in the centre like plates in a press,
+       slide out to their columns, then each rule and list draws in; certifications close the shot. */
+    stack: function(root){
+      var cards = $$('.card',root), stage = $('.caps',root);
+      var tl = gsap.timeline({defaults:{ease:'power3.inOut'},
+        scrollTrigger:{trigger:stage, pin:true, start:'top top', end:'+=220%', scrub:SCRUB, invalidateOnRefresh:true}});
+      tl.fromTo(cards, {
+          x:function(i,el){ return (el.parentNode.offsetWidth/2) - (el.offsetLeft + el.offsetWidth/2) + (i-1.5)*18; },
+          y:function(i){ return (1.5-i)*14; }, rotation:function(i){ return (i-1.5)*2.4; }, scale:.94
+        }, {x:0, y:0, rotation:0, scale:1, duration:.8, stagger:.05}, 0)
+        .fromTo($$('.card hr',root), {scaleX:0}, {scaleX:1, duration:.4, stagger:.06}, .7)
+        .fromTo($$('.card li',root), {y:16, autoAlpha:0}, {y:0, autoAlpha:1, duration:.25, stagger:.018, ease:'power3.out'}, .75)
+        .fromTo($$('.certs li',root), {y:40, autoAlpha:0}, {y:0, autoAlpha:1, duration:.4, stagger:.08, ease:'power3.out'}, 1.25)
+        .to({}, {duration:.3});
+      reveals(root, '.next');
+    },
+
+    /* RÉSUMÉ — a reading page, so nothing is pinned: the title settles, the sheet lifts in,
+       and each section rises as it enters. The side column is CSS position:sticky. */
+    resume: function(root){
+      gsap.fromTo($('.r-side h2',root), {letterSpacing:'.08em'}, {letterSpacing:'-.015em', ease:'none',
+        scrollTrigger:{trigger:root, start:'top top', end:'+=500', scrub:SCRUB}});
+      gsap.fromTo($('.sheet',root), {y:90, autoAlpha:.4},
+        {y:0, autoAlpha:1, ease:'none', scrollTrigger:{trigger:root, start:'top top', end:'+=420', scrub:SCRUB}});
+      reveals(root, '.r-sec:not(:first-child), .r-job, .next');
+    },
+
+    /* CONTACT — pinned close. Headline rises out of its masks, then the contact lines come up. */
+    contact: function(root){
+      var tl = gsap.timeline({scrollTrigger:{trigger:$('.contact',root), pin:true, start:'top top', end:'+=120%', scrub:SCRUB}});
+      tl.fromTo($$('.contact .mask > span',root), {yPercent:60}, {yPercent:0, duration:.6, stagger:.1}, 0)
+        .fromTo($$('.contact h2 em',root), {letterSpacing:'.12em'}, {letterSpacing:'0em', duration:.7}, 0)
+        .fromTo($$('.reach li',root), {y:26, autoAlpha:.15}, {y:0, autoAlpha:1, duration:.4, stagger:.07}, .25)
+        .to({}, {duration:.25});
+    }
+  };
+
+  function build(name){
+    var root = pages[names.indexOf(name)];
+    ctx = gsap.context(function(){
+      // Page progress hairline in the top bar.
+      gsap.fromTo('#prog', {scaleX:0}, {scaleX:1, ease:'none', scrollTrigger:{start:0, end:'max', scrub:.3}});
+      if (cine) init[name](root);
+      else { // simplified mobile experience: no pins, short scrubbed rises
+        reveals(root, '.r-sec, .about .mask, .a-item, .facts div, .portrait, [data-rv], .proj .p-text, .proj .p-viz, .plate, .card, .certs li, .reach li, .next, .index h2');
+      }
+    });
+    ScrollTrigger.refresh();
+  }
+
+  /* ---------- page transition: shutter closes, page swaps, shutter opens ---------- */
+  var blades = $$('#shutter i'), shlabel = $('#shlabel');
+  function go(name){
+    if (name === current) return;
+    if (busy){ queued = name; return; }
+    busy = true;
+    shlabel.textContent = pages[names.indexOf(name)].dataset.title;
+    if (lenis) lenis.stop();
+    gsap.timeline({onComplete:function(){ busy = false; if (lenis) lenis.start(); if (queued && queued !== current){ var q = queued; queued = null; go(q); } else queued = null; }})
+      .to(blades, {scaleY:1, duration:.55, ease:'power3.inOut'})
+      .fromTo(shlabel, {opacity:0, y:30}, {opacity:1, y:0, duration:.4, ease:'power3.out'}, .25)
+      .add(function(){ if (ctx) ctx.revert(); show(name); build(name); })
+      .to(shlabel, {opacity:0, y:-30, duration:.3, ease:'power2.in'}, '+=.25')
+      .to(blades, {scaleY:0, duration:.6, ease:'power3.inOut'}, '<.1');
+  }
+  window.addEventListener('hashchange', function(){ go(target()); });
+  show(target()); build(current);
+  // Crossing the desktop/phone breakpoint changes the whole layout mode, so start clean.
+  var mq = matchMedia('(min-width: 960px) and (min-height: 620px)');
+  if (mq.addEventListener) mq.addEventListener('change', function(){ location.reload(); });
+  // Fonts change line heights; re-measure the pins once they have loaded.
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
+})();
+</script>
+</body></html>
