@@ -21,6 +21,10 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. Libraries load from cdnjs and jsDelivr, so an internet connection is needed for the animation; without it the pages still read normally.
 
+## Live site
+
+https://vuppalasaiganesh.github.io/My_Portfolio/
+
 ## Deploy
 
 `.github/workflows/pages.yml` publishes the repository to GitHub Pages on every push to `main`. One-time setup: Settings, Pages, Source, **GitHub Actions**.
