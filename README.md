@@ -29,6 +29,19 @@ https://vuppalasaiganesh.github.io/My_Portfolio/
 
 `.github/workflows/pages.yml` publishes the repository to GitHub Pages on every push to `main`. One-time setup: Settings, Pages, Source, **GitHub Actions**.
 
+## Visitor analytics
+
+Visits are counted with [GoatCounter](https://www.goatcounter.com) under the site code `vuppalasaiganesh` (set as `GC_CODE` in `index.html`). It loads only on the github.io site, sets no cookies and stores no personal data.
+
+What the dashboard shows:
+
+- **Page views** per page: `/home`, `/work`, `/career`, `/stack`, `/resume`, `/contact`
+- **Where visitors came from**: referrer sites, plus `resume-qr` (scanned the résumé QR code) and `resume-link` (clicked the link in the PDF)
+- **Browser, OS, screen size, country** and, if enabled in GoatCounter settings, region and language
+- **Events**: `work/<project>` (scrolled to a project), `resume/download`, `resume/read-to-end`, `contact/saw-details`, `contact/copy-email`, `contact/copied-email`, `contact/copied-phone`, `contact/phone`, `click/linkedin`, `click/github...`, `click/traddx`, `time/30s`, `time/2m`, `time/5m`, `time/10m`
+
+Tag any link you share with `?ref=`, for example `https://vuppalasaiganesh.github.io/My_Portfolio/?ref=linkedin`, and it shows up as its own source.
+
 ## Replacing placeholders
 
 - Project mockups labelled "Illustration" can be swapped for real screenshots: replace the `.mock` block in that project with `<div class="shot"><img src="your-shot.jpg" alt="..."></div>`.

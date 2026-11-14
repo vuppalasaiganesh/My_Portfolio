@@ -585,7 +585,7 @@ a.copy{display:inline-block}
     </ul>
     <div class="c-row c-item"><button class="copy" id="copy" type="button">Copy email</button><a class="copy ghost" href="#resume">Read the résumé →</a></div>
   </div>
-  <div class="foot gut"><span class="label">Sai Ganesh Vuppala · 2026</span><a class="label" href="#home">Back to index ↑</a></div>
+  <div class="foot gut"><span class="label">Sai Ganesh Vuppala · 2026</span><span class="label">Visits counted with GoatCounter · no cookies, no personal data</span><a class="label" href="#home">Back to index ↑</a></div>
 </section>
 
 </main>
@@ -630,9 +630,70 @@ a.copy{display:inline-block}
   /* ---------- copy email ---------- */
   var btn = $('#copy'), email = $('#email');
   btn.addEventListener('click', function(){
+    track('contact/copy-email', 'Pressed Copy email');
     function sel(){ var r = document.createRange(); r.selectNodeContents(email); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected, press copy'; }
     try { navigator.clipboard.writeText(email.textContent).then(function(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy email'; }, 1800); }, sel); } catch(e){ sel(); }
   });
+
+  /* ---------- visit analytics (GoatCounter) ----------
+     Runs only on the live GitHub Pages site, never in previews or the claude.ai copy.
+     GoatCounter sets no cookies and stores no personal data. Per visit it records the page,
+     the referrer or ?ref= tag (the résumé QR code uses ?ref=resume-qr), browser, OS,
+     screen size and country, plus region and language if enabled in its settings.
+     Each page counts as its own path (/home, /work ...) and the events below are counted
+     under names such as work/traddx, click/linkedin or time/2m. */
+  var GC_CODE = 'vuppalasaiganesh';   // the site code chosen when signing up at goatcounter.com
+  var gcOn = /\.github\.io$/.test(location.hostname) || window.__GC_TEST__, gcQueue = [], sent = {};
+  function gc(vars){
+    if (!gcOn) return;
+    if (window.goatcounter && window.goatcounter.count) window.goatcounter.count(vars);
+    else gcQueue.push(vars);
+  }
+  function track(name, title){ gc({path:name, title:title || name, event:true}); }
+  function trackOnce(name, title){ if (sent[name]) return; sent[name] = 1; track(name, title); }
+  var slug = function(t){ return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); };
+  $$('.proj').forEach(function(p){ p.dataset.slug = slug($('h3',p).textContent); });
+  if (gcOn){
+    window.goatcounter = {no_onload:true};           // page views are sent by show() below
+    var gs = document.createElement('script');
+    gs.async = true; gs.src = window.__GC_SRC__ || 'https://gc.zgo.at/count.js';
+    gs.setAttribute('data-goatcounter', 'https://' + GC_CODE + '.goatcounter.com/count');
+    gs.setAttribute('data-goatcounter-settings', '{"no_onload":true}');
+    gs.onload = function(){ while (gcQueue.length && window.goatcounter.count) window.goatcounter.count(gcQueue.shift()); };
+    document.head.appendChild(gs);
+  }
+  // Outbound and contact clicks.
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a'); if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (a.id === 'dl') track('resume/download', 'Résumé PDF downloaded');
+    else if (/linkedin\.com/.test(h)) track('click/linkedin', 'Opened LinkedIn');
+    else if (/github\.com/.test(h)) track('click/github' + (h.split('github.com/vuppalasaiganesh')[1] || '').toLowerCase().replace(/\/$/,''), 'Opened GitHub ' + h);
+    else if (/traddx/.test(h)) track('click/traddx', 'Opened traddx.in');
+    else if (/^tel:/.test(h)) track('contact/phone', 'Tapped phone ' + h.slice(4));
+  }, true);
+  // Someone selecting and copying contact details by hand.
+  document.addEventListener('copy', function(){
+    var sel = String(getSelection());
+    if (/@gmail\.com/.test(sel)) trackOnce('contact/copied-email', 'Copied email address');
+    else if (/\d{3}\D{0,2}\d{3}\D?\d{4}/.test(sel)) trackOnce('contact/copied-phone', 'Copied phone number');
+  });
+  // Visible time on the site: how long people actually stay.
+  var seen = 0;
+  setInterval(function(){
+    if (document.hidden) return; seen += 5;
+    [[30,'30s'],[120,'2m'],[300,'5m'],[600,'10m']].forEach(function(t){ if (seen >= t[0]) trackOnce('time/' + t[1], 'Stayed ' + t[1]); });
+  }, 5000);
+  // Read-through markers: reached each project (phone layout), finished the résumé, reached contact links.
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){
+      if (!en.isIntersecting) return; var el = en.target;
+      if (el.classList.contains('proj')){ if (!document.documentElement.classList.contains('cine')) trackOnce('work/' + el.dataset.slug, 'Viewed project: ' + $('h3',el).textContent); }
+      else if (el.classList.contains('reach')) trackOnce('contact/saw-details', 'Reached contact details');
+      else trackOnce('resume/read-to-end', 'Read résumé to the end');
+    }); }, {threshold:.4});
+    $$('.proj, .reach').concat([$('.sheet').lastElementChild]).forEach(function(el){ io.observe(el); });
+  }
 
   /* ---------- résumé download ----------
      On your own hosting the link downloads the PDF directly. Inside a claude.ai artifact,
@@ -668,6 +729,7 @@ a.copy{display:inline-block}
     pages.forEach(function(p){ p.hidden = p.dataset.page !== name; });
     links.forEach(function(a){ if (a.getAttribute('href') === '#'+name) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     current = name;
+    gc({path:'/' + name, title:pages[names.indexOf(name)].dataset.title});
     if (lenis) lenis.scrollTo(0,{immediate:true,force:true});
     window.scrollTo(0,0);
   }
@@ -761,6 +823,7 @@ a.copy{display:inline-block}
             var i = Math.max(-1, Math.min(N-1, Math.floor(self.progress * tl.duration() - LEAD + .08)));
             count.textContent = (i < 0 ? '00' : ('0'+(i+1))) + ' / 0' + N;
             pname.textContent = i < 0 ? 'Selected Work' : $('h3', projs[i]).textContent;
+            if (i >= 0) trackOnce('work/' + projs[i].dataset.slug, 'Viewed project: ' + pname.textContent);
           }}});
       // Title card splits left and right to make room.
       var ts = $$('.work-title h2 span',root);
